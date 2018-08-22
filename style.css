@@ -1,0 +1,333 @@
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #232323;
+	overflow: auto;
+	overflow-x: hidden;
+	font-family: sans-serif;
+}
+
+header{
+	margin-top: 0px;
+	background-color: rgb(239, 86, 31);
+	height:10%;
+	width:100%;
+	padding-top: 0px;
+	color: white;	
+}
+
+nav{
+	background-color: #232323;
+	height:7%;
+	padding: 0;
+	margin: 0;
+	padding-right: 10px;
+	position: sticky;
+	top:0%;
+}
+
+
+/*==================header block list=====================*/
+ul.head {
+    list-style-type: none;
+    margin-top: 20;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    /*background-color: #333;*/
+}
+
+
+li.headright{
+	float: left;
+	font-size: 20;
+	font-family: century gothic;
+}
+
+a.head{	
+	border-left:1px solid;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2px 10px;
+    text-decoration: none;
+}
+
+li.headright a.head:hover{
+    color: #111;
+    font-size: 25;
+}
+
+
+/*===========navigation bar button===============*/
+
+.navbutton {
+    background-color: #302e2e;
+    color: #ededed;
+    height: 100%;
+    border-radius: 30px;   
+    padding:5px 15px;
+    font-size: 17;
+    font-family: Corbel;
+    border: none;
+	cursor: pointer;
+	transition: 0.3s ease;	
+}
+
+.dropdown {
+    /*position: relative;*/
+    display: inline-block;  
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    opacity: 0.8;
+   /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #5e5e5e;
+	color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbutton:hover{
+	background-color: #ef561f;
+	color: #ededed;
+}
+
+
+/*=================search bar==========================*/
+
+
+div.search{
+	float: right;
+	height: 100%;
+	width: 20%;
+	background-color: #232323;
+}
+
+input.searchbar{
+	float: right;
+	border: 2px solid;
+	width:30px;
+	height:30px;
+	margin-top:10px; 
+	border-radius: 50px;
+	border-color: white;
+	background-color: #232323;
+	color: #232323;
+}
+
+hr.searchhandle{
+	float: right;
+	background-color: white;
+	margin-top: 35px;
+	margin-left: -5px;
+	width:25px;
+	height:2px; 
+	opacity: 0.9;
+	transform: rotate(30deg);
+}
+
+input.searchbar:focus{
+	width: 90%;
+	background-color: gray;
+	padding: 10px;
+	font-size: 18;
+	animation-name: anim;
+    animation-duration: 0.3s;
+}
+
+@keyframes anim {
+    0%   {width:5%;}
+    25%  {width:25%;}
+    50%  {width:50%;}
+    75%  {width:75%;}
+    100% {width:90%;}
+}
+
+
+/*===================alltime div========================*/ 
+
+	div.alltime{
+		margin:0;
+		margin-right: -20;
+		height: 93%;
+		width:18%;
+		float: right;
+		opacity: 0.9;
+		background-color: #232323;
+		text-align: center;
+		overflow: auto;
+		top: 7%;
+		position: sticky;
+
+	}
+		h1.boa{
+	margin:0;
+	font-family: equality;
+	color: white;
+	font-size: 40;
+	}
+
+	img.alltime{
+		height:50%;
+		width: 90%;
+		margin-top:5%; 
+	}
+
+
+
+/*====================main section=====================*/
+
+section.mainsection{	
+	height: auto;
+	width:82%;
+	background-color:  #232323;
+	margin: 0;
+	display: inline-block;
+}
+
+
+div.main{
+/*background-color: #232323;*/
+display: inline-block;
+background-image: url(images/moviesbg.jpg);
+background-color: rgba(255,255,255,0.1);
+background-blend-mode: lighten;
+background-attachment: fixed;
+background-position: 20% 65%;
+height:auto;
+width: 100%;
+padding-left: 2%;
+text-align: center;
+}
+
+
+.mainheading{
+	width: 95%;
+	margin-top: 3%;
+	padding:0.3% 1%;
+	text-align: left;
+	color: rgb(255, 47, 47);
+	font-size: 40;
+	font-family: mercy;
+	float: left;
+}
+
+p.news{
+	text-align: justify;
+	font-family:Calibri Light;
+	display: inline-block;
+	margin: 1% 5%;
+	padding: 1% 2%;
+	font-size: 21;
+	color:white;
+	background-color: rgba(0,0,0,0.7);
+}
+
+footer{
+	height:3%;
+	width: 100%;
+	opacity: 0.3;
+	background-color: #6b6b6b;
+	margin-bottom: 0;
+	color: white;
+}	
+
+
+
+
+
+
+
+
+
+/*=============================slid show===============================*/
+
+div.ss{
+	height:80%;
+	width: 70%;
+	display: inline-block;
+	margin-top: 1%;
+}
+
+.slideshow-container {
+  width: 100%;
+  margin: 0;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  width: auto;
+  padding: 16px 30px;
+  font-weight: bold;
+  font-size: 18px;
+  color:white;
+  background-color: rgba(0,0,0,0.7);
+  transition: 0.6s ease;
+  border-radius:  3px 3px ;
+}
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  
+  font-size: 30;
+  font-family: Calibri Light;
+  color:white;
+  background-color: rgba(0,0,0,0.7);
+  padding-top:20px;
+  text-align: center;
+}
+
+
+/* ======================hits======================== */
+div.hits{
+	width: 90%;
+	display: inline-block;
+	color:white;
+	background-color: rgba(0,0,0,0.7);
+	height: auto;
+	margin-top:3%;
+}
+
+img.hits{
+
+	height:auto;
+	width: 15%; 
+	float: left;
+}
+
+h1.hits{
+	color:white;
+	/* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 1px white; */
+	text-shadow: 0 0 5px red; 
+}
+p.hits{
+	font-family: Calibri Light;
+	text-align: justify;
+	font-size: 18;
+	padding:2%;
+}
