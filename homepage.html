@@ -1,0 +1,144 @@
+<html>
+<head>
+	<title>homepage</title>
+</head>
+	<body>
+		<link rel="stylesheet" href="style.css" type="text/css">
+			<header>
+				<img src="images/mmlogo.png" alt="moviemania" style="width: 9%;height:95%;margin-left:1%;">		
+					<ul class="head"> 
+						<li class="headright"><a class="head" href="#">Login</a></li>  
+						<li class="headright"><a class="head" href="#">Sign up</a></li>
+						<li class="headright"><a class="head" href="#">About Us</a></li>
+					</ul>
+			</header>
+			<nav>
+				 <div class="dropdown">
+  					<button class="navbutton">Home</button>
+				</div>	
+  				<div class="dropdown">
+  					<button class="navbutton">Categories</button>
+				  		<div class="dropdown-content">
+					    <a href="#">Action</a>
+					    <a href="#">Comedy</a>
+					    <a href="#">Horror</a>
+					    <a href="#">Drama</a>
+					    <a href="#">Crime</a>
+					  	</div>
+				</div>	
+				 <div class="dropdown">
+  					<button class="navbutton">Languages</button>
+						<div class="dropdown-content">
+					    <a href="#">English</a>
+					    <a href="#">Hindi</a>
+					    <a href="#">French</a>
+					  	</div>
+				</div>		
+				<div class="dropdown">
+  					<button class="navbutton">stars</button>
+						<div class="dropdown-content">
+					    <a href="#">Shahrukh Khan</a>
+					    <a href="#">Amitabh Bachchan</a>
+					    <a href="#">tom cruise</a>
+					    <a href="#">Johnny depp</a>
+					    <a href="#">will smith</a>
+					  	</div>
+				</div>	
+
+				<div class="search">
+					<form action="javascript:void(0);">
+						<hr class="searchhandle">
+						<input id="input1" type="text" class="searchbar">
+						<input type="reset" style="display:none;">
+					</form>
+					<script>
+						document.getElementById('input1').addEventListener('keyup',function(e){
+							if (e.which == 13)this.blur();
+							});
+					</script>	
+				</div>	
+			</nav>
+			<div class="alltime">
+				<h1 class="boa">Best Of All Time</h1>
+				<a href="#"><img class="alltime" src="images/batmandk.jpg" alt="batmandk"></a>
+				<a href="#"><img class="alltime" src="images/batmandkr.jpg" alt="batmandkr"></a>
+				<a href="#"><img class="alltime" src="images/gow.jpg" alt="gow"></a>
+				<a href="#"><img class="alltime" src="images/gow2.jpg" alt="gow2"></a>
+				<a href="#"><img class="alltime" src="images/devdas.jpg" alt="devdas"></a>
+				<a href="#"><img class="alltime" src="images/logan.jpg" alt="logan"></a>
+		</div>
+		<section class="mainsection">
+			<div class="main">
+				<h1 class="mainheading"><u>New Launched Trailers</u><h1><br>
+					<div class="ss">
+						<div class="slideshow-container">
+							<div class="mySlides">
+								<video width="100%" height="auto" controls>
+								<source src="videos/shazam.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+								</video>
+  								<div class="text">SHAZAM</div>
+							</div>
+
+							<div class="mySlides">
+								<video width="100%" height="auto" controls>
+								<source src="videos/venom.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+								</video>
+								<div class="text">VENOM</div>
+							</div>
+							
+							<div class="mySlides">
+								<video width="100%" height="auto" controls>
+									<source src="videos/aquaman.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+									</video>
+									<div class="text">AQUAMAN</div>
+							</div>
+							<br>
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						</div>
+
+						<script>
+							var slideIndex = 1;
+							showSlides(slideIndex);
+
+							// Next/previous controls
+							function plusSlides(n) {
+								showSlides(slideIndex += n);
+							}
+
+							// Thumbnail image controls
+							function currentSlide(n) {
+								showSlides(slideIndex = n);
+							}
+
+							function showSlides(n) {
+								var i;
+								var slides = document.getElementsByClassName("mySlides");
+								if (n > slides.length) {slideIndex = 1}
+								if (n < 1) {slideIndex = slides.length}
+								for (i = 0; i < slides.length; i++) {
+									slides[i].style.display = "none";
+							  	}
+								slides[slideIndex-1].style.display = "block";
+							} 
+						</script>		
+					</div>
+					<hr style="margin-top: 5%;">
+					<div class="mainheading"><u>News</u></div>
+						<p class="news">Aenean lobortis nibh et rhoncus sodales. Nam dignissim est vel ligula vulputate, vitae euismod mauris gravida. Proin id sem ut nulla volutpat rutrum. Aliquam rhoncus velit et eros eleifend, ac euismod est dictum. Etiam diam massa, iaculis eget posuere et, maximus sit amet enim.</p>
+						<p class="news">Quisque vehicula orci sit amet diam scelerisque, eget posuere turpis luctus. Proin placerat ornare massa finibus congue. Integer id bibendum diam.</p>
+						<p class="news">rhoncus sodalNam dignissim est vel ligula vulputateuismod mas gravida. Proin id sem ut nulla volutpat rutrum rhoncus velit et eros eleife Etiam diam massa, iaculis eget posuere et, maximus sit amet enim.</p>
+					<hr>
+					<div class="mainheading"><u>2018 Hits</u></div>
+						<div class="hits"><a href="#"><img class="hits" src="images/avengersiw.jpg" alt="infinity"></a><h1 class="hits">AVENGERS:INFINITY WAR</h1><p class="hits">American superhero film based on the Marvel Comics superhero team the Avengers, produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures. It is the sequel to 2012's The Avengers and 2015's Avengers: Age of Ultron, and the nineteenth film in the Marvel Cinematic Universe (MCU).</p></div>
+						<div class="hits"><a href="#"><img class="hits" src="images/mifallout.jpg" alt="missionimpossible"></a><h1 class="hits">MISSION IMPOSSIBLE:FALLOUT</h1><p class="hits">Ethan Hunt and the IMF team join forces with CIA assassin August Walker to prevent a disaster of epic proportions. Arms dealer John Lark and a group of terrorists known as the Apostles plan to use three plutonium cores for a simultaneous nuclear attack on the Vatican, Jerusalem and Mecca, Saudi Arabia. When the weapons go missing, Ethan and his crew find themselves in a desperate race against time to prevent them from falling into the wrong hands.</p></div>
+						<div class="hits"><a href="#"><img class="hits" src="images/dp2.jpg" alt="dp2"></a><h1 class="hits">DEADPOOL 2</h1><p class="hits">Wisecracking mercenary Deadpool meets Russell, an angry teenage mutant who lives at an orphanage. When Russell becomes the target of Cable -- a genetically enhanced soldier from the future -- Deadpool realizes that he'll need some help saving the boy from such a superior enemy</p></div>
+						<div class="hits"><a href="#"><img class="hits" src="images/blackpanther.jpg" alt="blackpanther"></a><h1 class="hits">BLACK PANTHER</h1><p class="hits">After the death of his father, T'Challa returns home to the African nation of Wakanda to take his rightful place as king. When a powerful enemy suddenly reappears, T'Challa's mettle as king -- and as Black Panther -- gets tested when he's drawn into a conflict that puts the fate of Wakanda and the entire world at risk. </p></div>
+			</div>
+		</section>
+		<footer>moviemania copyright&copy 2018</footer>
+	</body>
+</html>
