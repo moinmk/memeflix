@@ -1,0 +1,492 @@
+body{
+    margin: 0;
+    background-color: rgb(238, 238, 238);
+    overflow-x:hidden;
+}
+
+/* ////////////////////////header//////////////////// */
+header{
+    margin: 0px;
+    width:100%;
+    height:10%;
+    background-color: rgb(231, 21, 21);
+}
+
+
+header h3{
+    float:right;
+    display:inline-block;
+    margin-top:2.7%;
+    margin-right:.5%;
+    color: rgb(240, 240, 240);
+    
+}
+
+.logo{
+    display:inline-block;
+    height:90%;
+    width:15%;
+    margin-left:.5%;
+    margin-top:.7%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+  .logo{
+      width:40%;
+  }
+}
+
+
+
+.usermenu{
+    float:right;
+    /* background-color: black; */
+    width:5%;
+    height: 95%;
+    border-radius: 50%;
+}
+
+.menucontent{
+    display: none; 
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    float:right;
+    margin-top:-5px;
+    margin-right:2%;
+    z-index:20;
+}
+
+.menucontent a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menucontent a:hover {
+    cursor: pointer;
+	background-color: #5e5e5e;
+    color: #ffffff;
+    transition: 0.3s ease;	
+}
+
+.usermenu:hover .menucontent {
+    display: block;
+}
+
+
+img.user{
+    margin:5px;
+    height:90%;
+    width:90%;
+    border-radius: 50%;
+    background-size: cover;
+    display: inline-block;
+    /* transform: rotate(270deg); */
+}
+
+/* ////////////////////////nav//////////////////////////// */
+nav{
+    width: 100%;
+    height: 5%;
+    background-color: transparent;
+    text-align: center; 
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbutton{
+    height:100%;
+    width:10%;
+    margin:0;
+    border: none;
+    font-size: 21;
+    font-family: corbel;
+    background-color: rgba(49, 49, 49, 0.904);
+    border: 2px solid white;
+    color:white;
+    text-shadow: 5px 5px 50px black; 
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .navbutton {
+        width: 28%;
+        height:110%;
+        font-size: 16;
+    }
+}
+
+.actbtn{
+    color:red;
+}
+
+.navbutton:hover{
+    color: black;
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+	transition: 0.5s ease;	
+}
+
+/* /////////////////////categories div/////////////////// */
+div.categories{
+    height: 70%;
+    width: 15%;
+    /* background-color:yellow;  */
+    float: left;
+    display: inline-block;
+    position: sticky;
+    top: 15%;
+}
+
+div.list{
+    box-shadow: 5px 5px 50px  rgba(0, 0, 0, 0.397);   
+    height:10%;
+    width:23%; 
+    margin-top: 1%;
+    background-color: rgba(19, 19, 19, 0.829);
+    transition: width 0.3s;
+    transition-timing-function: ease-out;
+    overflow:hidden;
+    border-right: 2px solid black;    
+}
+
+div.list:hover{
+    cursor: pointer;
+}
+
+div.list p{
+    font-family: century gothic;
+}
+
+div.current{
+    border-right: 4px solid red;    
+}
+
+
+.list img{
+    height:100%;
+    float:right;
+}
+
+.list p{
+    margin-top:5%;
+    color: white;
+    font-size: 20;
+}
+
+.categories a{
+
+    border:none;
+    text-decoration: none;
+}
+
+div.list:hover{
+    opacity: 1;
+    width:90%;
+    }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    div.list {
+        width: 60%;
+    }
+    div.list:hover{
+        
+        width:250%;
+    }
+    div.list p{
+    font-size: 16;
+    }
+}
+
+
+
+/* ////////////////////////post////////////////////////////// */
+
+div.mainsection{
+    height: auto;
+    width: 70%;
+    margin-top:1%;
+    box-shadow: 10px 10px 50px  rgba(0, 0, 0, 0.555);
+    background-color: rgb(25, 25, 25);
+    display: inline-block;
+    text-align: center; 
+    padding-bottom: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    div.mainsection{
+        width:80%;
+    }
+}
+div.post{
+    height:auto;
+    width:90%;
+    box-shadow: 10px 1px 30px  rgba(0, 0, 0, 0.719);
+    background-color: rgb(25, 25, 25);
+    display: inline-block;
+    /* border-top: 2px solid red;
+    border-bottom: 2px solid red; */
+    margin-top: 5%;
+    padding: 1% 0;
+}
+
+
+div.post p{
+    font-size:20;
+    color: rgb(221, 221, 221);
+    text-align: left;
+    padding:2% 3%;
+    margin-bottom:1%;
+    /* background-color: red; */
+}
+
+div.image{
+    /* height: auto; */
+    max-width: 70%;
+   
+    display: inline-block;
+    border:1px solid black;
+    position: relative;
+}
+
+img.mainpost{
+    height: auto;
+    width: 100%;   
+}
+
+
+div.sensitive{
+    height:100%;
+    width: 100%;
+    background-color: rgb(199, 199, 199);
+    z-index:1;
+    position: absolute;
+    opacity: 0.97;
+    font-size: 20;       
+}
+
+
+
+
+input.commentbar{
+    box-shadow: 10px 10px 30px  rgba(0, 0, 0, 0.473);
+    margin-top: 5%;
+    padding: 8px 15px;
+    padding-right: 10%;
+    font-size: 14;
+    width: 80%;
+    background-color:  transparent;
+    border: 2px solid rgb(133, 133, 133);
+    border-radius: 50px;
+    color: white;
+}
+
+
+input.commentbarbutton{
+    width: 10%;
+    height: 4%;
+    margin-left: -10%;
+    background: transparent;
+    border:none;
+    color:rgb(168, 168, 168);
+    display: inline-block;
+    cursor: pointer;
+}
+
+div.othercomment{
+    box-shadow: 10px 10px 30px  rgba(0, 0, 0, 0.295);
+    height: 15%;
+    width: 70%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: right;
+    margin-top: 4%;
+    color: gray;
+    margin-right: 10%;
+    padding: 2% 2%;
+    text-align: left;
+    overflow: auto;
+}
+
+
+div.vote{
+    height:auto;
+    display: inline-block;
+    width:auto;
+    color: rgb(211, 211, 211);
+    /* background-color:black;  */
+    float: left;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 10%;    
+}
+
+.upvotebutton,.downvotebutton{
+    margin:0;
+    font-size: 45;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    border:none; 
+    color: rgb(211, 211, 211);
+}
+
+.upvoted{
+    color: rgb(2, 95, 2);
+}
+
+.downvoted{
+    color: rgb(134, 10, 10);
+}
+
+
+
+h1.noofvotes
+{
+    margin:0;
+    font-size: 22;
+    display: inline-block;
+    
+    /* background-color: red; */
+}
+
+@media only screen and (max-width: 768px) {
+    div.post p{
+        font-size:16;
+    }
+    input.commentbar{
+        font-size:10;
+        width:90%;
+    }
+    input.commentbarbutton{
+        font-size:12;
+        margin-left:-35%;
+        width:30%;
+        /* border:1px solid red; */
+    }
+    .upvotebutton,.downvotebutton{    
+        font-size: 16;
+    }
+    h1.noofvotes{
+        font-size:16;
+    }
+    div.sensitive{
+        font-size:11;
+    }
+    
+}
+
+
+
+
+/* ///////////////////////add post /////////////////////////////// */
+
+.addpostbtn{    
+    font-size: 30;
+    background-color: rgb(231, 21, 21);
+    border-radius: 50%;
+    padding: 7 16 10 16;
+    float: right;
+    border:none;
+    margin-right: 2%;
+    position: sticky;
+    top: 90%;
+    transition: transform .3s;
+    color:white;
+    text-shadow: 10px 10px 20px black;
+}
+
+@media only screen and (max-width: 768px) {
+    .addpostbtn{
+        font-size:20;
+        padding: 7 14 10 14;
+    }
+}
+
+
+.addpostbtn:hover{
+    cursor: pointer;
+    transform: rotate(180deg);
+    box-shadow: 5px 5px 50px  rgba(0, 0, 0, 0.397);   
+    
+}
+
+#addpost,#udetails{
+    display: none; 
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.473); 
+}
+
+#addpostcontent,#udcontent{
+    background-color: rgb(25, 25, 25);
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+    height:auto;
+    text-align: center;
+}
+
+
+#addpostcontent input,#addpostcontent select, .caption ,#udcontent input,#udcontent select{
+    width:50%;
+    font-size:18;
+    resize:none;
+    margin-top:3%;
+    color:white;
+    background-color: transparent;
+    border:2px solid white;
+    padding: 5px;
+}
+#udcontent input,#udcontent select{
+    margin-top:0;
+    margin-bottom: 2%;
+}
+#udcontent label{
+    color:white;
+    font-size: 18;
+}
+
+#addpostcontent input[type="file"]{
+    /* display: none;   */
+}
+
+
+
+.addimage:hover{
+    background-color: white;
+    color:black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#addpostcontent button,#udcontent button{
+    padding:10px;
+    color:white;
+    background-color: transparent;
+    border: 2px solid white;
+    margin-top: 5%;
+    /* margin-left:5%;  */
+    font-size:20;
+    width:25%;
+    margin-bottom: 3%;
+}
+
+#addpostcontent button:hover,#udcontent button:hover{
+    background-color: white;
+    color:black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
